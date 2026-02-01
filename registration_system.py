@@ -290,3 +290,13 @@ class RegistrationSystem:
             if u.get_username() == username:
                 return True
         return False
+
+
+def start_registration_system():
+    """Create a RegistrationSystem instance and start the program.
+
+    This helper keeps object creation out of `main.py` while preserving
+    the original program behavior.
+    """
+    system = RegistrationSystem()
+    system.run()
