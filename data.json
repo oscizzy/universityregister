@@ -1,0 +1,56 @@
+{
+    "courses": [
+        {
+            "course_id": "CS101",
+            "course_name": "Introduction to Programming",
+            "instructor": "Dr. Smith",
+            "schedule": "MWF 10-11",
+            "max_students": 30
+        },
+        {
+            "course_id": "MATH201",
+            "course_name": "Calculus I",
+            "instructor": "Prof. Johnson", 
+            "schedule": "TTH 1-2:30",
+            "max_students": 25
+        },
+        {
+            "course_id": "ENG101",
+            "course_name": "English Composition",
+            "instructor": "Dr. Williams",
+            "schedule": "MWF 2-3",
+            "max_students": 20
+        },
+        {
+            "course_id": "CALC101",
+            "course_name": "Calculus",
+            "instructor": "Dr Magorokosho",
+            "schedule": "M2-3",
+            "max_students": 20
+        }
+    ],
+    "students": [
+        {
+            "username": "john",
+            "password": "password1",
+            "user_id": "S001"
+        },
+        {
+            "username": "emma",
+            "password": "password2",
+            "user_id": "S002"
+        },
+        {
+            "username": "stacey",
+            "password": "stacey123",
+            "user_id": "S003"
+        }
+    ],
+    "admins": [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "user_id": "A001"
+        }
+    ]
+}
