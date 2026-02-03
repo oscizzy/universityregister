@@ -2,6 +2,11 @@ from user import User
 
 
 class Student(User):
+    # OOP - Inheritance:
+    # Student inherits from User, reusing authentication and identity behavior.
+    # OOP - Encapsulation:
+    # Student keeps its registered courses in `registered_courses` and provides
+    # methods to interact with them (register_course, drop_course, view_registered_courses).
     def __init__(self, username, password, student_id):
         super().__init__(username, password, student_id)
         self.registered_courses = []

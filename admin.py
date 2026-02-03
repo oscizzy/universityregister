@@ -3,6 +3,11 @@ from course import Course
 
 
 class Admin(User):
+    # OOP - Inheritance:
+    # Admin inherits from User so it shares authentication methods and identity.
+    # OOP - Abstraction:
+    # Admin provides higher-level operations (create_course, delete_course,
+    # view_all_courses) that encapsulate the underlying Course operations.
     def __init__(self, username, password, admin_id):
         super().__init__(username, password, admin_id)
 

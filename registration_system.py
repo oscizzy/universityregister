@@ -83,6 +83,9 @@ class RegistrationSystem:
     # Program entry point
     def run(self):
         print("==== University Registration System ====")
+        # OOP - Abstraction:
+        # `run` provides the high-level program flow (startup, login, menus)
+        # so callers don't need to manage these details.
         current_user = self.login()
         if current_user is None:
             print("Login failed. Exiting system.")
@@ -100,6 +103,11 @@ class RegistrationSystem:
         username = input("\nEnter username: ").strip()
         password = input("Enter password: ").strip()
 
+        # OOP - Polymorphism & Inheritance:
+        # We iterate over `admins` and `students` and call `login` on each.
+        # `login` is implemented on the base `User` class and used polymorphically
+        # by Admin and Student instances. This demonstrates usage of the shared
+        # interface defined by the parent class.
         for admin in self.admins:
             if admin.login(username, password):
                 print(f"\nWelcome Admin: {admin.get_username()}")

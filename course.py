@@ -1,4 +1,11 @@
 class Course:
+    # OOP - Encapsulation:
+    # Course keeps its attributes private to the class and exposes accessor
+    # methods (get_course_id, get_course_name, get_instructor, get_schedule,
+    # get_max_students) and mutators (add_student, remove_student) to manage state.
+    # OOP - Abstraction:
+    # Methods like `is_full` provide a simple interface hiding the internal
+    # representation of enrolled students.
     def __init__(self, course_id, course_name, instructor, schedule, max_students):
         self.course_id = course_id
         self.course_name = course_name
