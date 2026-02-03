@@ -1,3 +1,16 @@
+"""
+registration_system.py
+Core application module that defines the `RegistrationSystem` class and the
+`start_registration_system` helper. Responsibilities include:
+
+- Loading and saving persistent data (courses, students, admins).
+- Initializing sample data when no data file exists.
+- Providing the interactive CLI flow (login, admin/student menus).
+
+This module contains the main program logic; it should be imported by
+`main.py` which only delegates startup to `start_registration_system()`.
+"""
+
 import json
 from student import Student
 from admin import Admin
@@ -6,6 +19,11 @@ from course import Course
 
 class RegistrationSystem:
     DATA_FILE = "data.json"
+
+    # The RegistrationSystem class coordinates the application's state and
+    # user interaction. It keeps lists of `courses`, `students`, and `admins`
+    # in memory, provides persistence via JSON file I/O, and exposes
+    # methods that implement the CLI menus and helper operations.
 
     def __init__(self):
         self.courses = []

@@ -1,3 +1,13 @@
+"""
+user.py
+Defines the `User` base class which represents a person that can
+authenticate in the system (either a Student or Admin).
+
+`User` stores basic identity information (username, password, user_id)
+and provides simple authentication and accessor methods used by
+subclasses and other modules.
+"""
+
 class User:
     # OOP - Encapsulation:
     # User stores its data (username, password, user_id) and exposes

@@ -1,3 +1,11 @@
+"""
+admin.py
+Defines the `Admin` class. Admins are privileged users who can manage
+courses and students. The class reuses authentication logic from `User`
+and provides higher-level operations that are used by the main
+application flow.
+"""
+
 from user import User
 from course import Course
 

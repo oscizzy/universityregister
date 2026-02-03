@@ -1,3 +1,12 @@
+"""
+course.py
+Model for an academic course. The `Course` class stores identifying
+information (id, name, instructor, schedule, capacity) and the list of
+currently enrolled students. It provides small helper methods used by
+the application code to check capacity and manage enrollments.
+"""
+
+
 class Course:
     # OOP - Encapsulation:
     # Course keeps its attributes private to the class and exposes accessor

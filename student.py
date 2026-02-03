@@ -1,3 +1,12 @@
+"""
+student.py
+Defines the `Student` class which models a student user in the system.
+
+Students can register for courses, drop them, view their own registered
+courses, and the class enforces simple constraints (capacity and schedule
+conflicts). The class reuses authentication behavior from `User`.
+"""
+
 from user import User
 
 
